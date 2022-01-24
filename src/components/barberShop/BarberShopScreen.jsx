@@ -1,6 +1,8 @@
 import React from 'react'
 import {Header} from './Header'
 import { Services } from './Services';
+import { Resenas } from './Resenas';
+import { Footer } from './Footer'
 
 export const BarberShopScreen = () => {
 
@@ -20,8 +22,10 @@ export const BarberShopScreen = () => {
 				</div>
 
 				<Services />
+				<Resenas />
 			</div>
 			
+			<Footer />
 		</div>	
 	)
 }
