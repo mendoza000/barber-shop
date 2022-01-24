@@ -1,0 +1,17 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	font-family: $font-text;
+	background-color: $primary;
+	color: $color-text;
+}
+
+html{
+	font-size: 10px;
+	padding-bottom: 7rem;
+}
+body{
+	font-size: 1.6rem;
+}
