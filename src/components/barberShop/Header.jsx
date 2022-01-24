@@ -40,12 +40,12 @@ export const Header = () => {
 		gsap.to(logo.current, {
 			opacity: 1,
 			x: 0,
-			duration: 1
+			duration: 1.5
 		})
 		gsap.to(circle.current, {
 			opacity: 1,
 			x: 0,
-			duration: 1
+			duration: 1.5
 		})
 		// gsap.to(sombra.current, {
 		// 	opacity: 1,
@@ -55,17 +55,17 @@ export const Header = () => {
 		gsap.to(img.current, {
 			opacity: 1,
 			y: 0,
-			duration: 1, 
+			duration: 1.5, 
 		})
 		gsap.to(title.current, {
 			opacity: 1,
 			y: 0,
-			duration: 1.5
+			duration: 2
 		})
 		gsap.to(ubi.current, {
 			opacity: 1,
 			y: 0,
-			duration: 1.5
+			duration: 2
 		})
 	},[])
 
