@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import { BarberShopScreen } from '../barberShop/BarberShopScreen';
 import {FaqScreen} from '../faq/FaqScreen'
+import { CiteScreen } from '../cite/CiteScreen';
 import { NavBar } from '../ui/NavBar';
 
 export const BarberRouter = () => {
@@ -15,6 +16,9 @@ export const BarberRouter = () => {
 				<Routes>
 					<Route exact path="/" element={ <BarberShopScreen /> } />
 					<Route exact path="/faq" element={ <FaqScreen /> }/>
+					<Route exact path="/cita" element={ <CiteScreen /> }/>
+
+
 				</Routes>
 			</BrowserRouter>
 	)

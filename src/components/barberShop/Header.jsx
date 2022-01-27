@@ -73,7 +73,7 @@ export const Header = () => {
 	return(
 		<div className="barber__header">
 				
-			<p className="barber__header-top">
+			<div className="barber__header-top">
 				<span ref={logo}>
 					LOGO
 				</span>
@@ -81,7 +81,7 @@ export const Header = () => {
 					className="barber__header-circle"
 					ref={circle}
 				></div>
-			</p>
+			</div>
 
 			<img 
 				src={barbero} 

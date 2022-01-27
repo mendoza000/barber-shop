@@ -12,7 +12,7 @@
 .faq__list-items{
 	display: flex;
 	flex-wrap: wrap;
-	grid-gap: 2rem
+	grid-gap: 3rem
 }
 .faq__item{
 	background-color: $primary-l;
@@ -23,4 +23,5 @@
 .faq__item-title{
 	margin-bottom: 1rem;
 	color: $secondary;
+	font-size: 1.8rem;
 }
