@@ -1,0 +1,26 @@
+.faq__container{
+	padding: 1rem 2rem;
+}
+.faq__title{
+	text-decoration: underline;
+	color: $secondary;
+	text-align: center;
+	font-size: 2.4rem;
+	margin-bottom: 3rem;
+	letter-spacing: 0.2rem;
+}
+.faq__list-items{
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 2rem
+}
+.faq__item{
+	background-color: $primary-l;
+	padding: 1.5rem;
+	border-radius: 15px;
+	box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.8);
+}
+.faq__item-title{
+	margin-bottom: 1rem;
+	color: $secondary;
+}
