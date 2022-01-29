@@ -34,3 +34,44 @@
 		fill: $primary;
 	}
 }
+
+.ui__nav-item-mobile{
+	display: flex;
+}
+.ui__nav-item-desktop{
+	display: none;
+}
+
+@media screen and (min-width: 600px) {
+	.ui__nav{
+		position: absolute;
+		top: 0;
+		left: 0;
+		box-shadow: none;
+		justify-content: right;
+		margin-right: -2rem;
+		grid-gap: 2rem;
+		background-color: transparent;
+	}
+	.ui__nav-item-mobile{
+		display: none;
+	}
+	.ui__nav-item-desktop{
+		display: flex;
+		text-decoration: none;
+		color: $secondary;
+		transition: background-color .3s, color .3s;
+		border-radius: 5px;
+		width: 7rem;
+		font-weight: bold;
+
+		&:last-child{
+			margin-right: 2rem;
+		}
+
+		&:hover{
+			background-color: $secondary;
+			color: $primary-o;
+		}
+	}
+}

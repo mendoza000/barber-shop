@@ -2,6 +2,8 @@ import React from 'react'
 import {Header} from './Header'
 import { Services } from './Services';
 import { Resenas } from './Resenas';
+import { CiteScreen } from '../cite/CiteScreen'
+import { FaqScreen } from '../faq/FaqScreen'
 import { Footer } from './Footer'
 
 export const BarberShopScreen = () => {
@@ -23,6 +25,10 @@ export const BarberShopScreen = () => {
 
 				<Services />
 				<Resenas />
+
+				<CiteScreen />
+
+				<FaqScreen />
 			</div>
 			
 			<Footer />

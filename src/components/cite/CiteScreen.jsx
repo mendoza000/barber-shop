@@ -35,43 +35,47 @@ export const CiteScreen = () => {
 				Agendar cita
 			</h1>
 
-			<h3 className="cite__subtitle">
-				<box-icon name="calendar"></box-icon>
-				Seleccionar fecha
-			</h3>
-			<Calendar
-        onChange={setDate}
-        value={date}
-      />
-
-      <h3 className="cite__subtitle">
-				<box-icon name="time"></box-icon>
-				Seleccionar hora
-			</h3>
-
-			<div className="cite__hours-list">
-				{
-					hours.map(e => {
-						return(
-							<span 
-								className={`cite__hours-item ${
-									(!e.available)
-									? "cite__hours-item-unavailable"
-									: ""
-								} ${
-									(time === e.hour)
-									? "cite__hours-item-select"
-									: ""
-								}`}
-								key={e.hour}
-								onClick={ () => handleSelectTime(e)}
-							>
-								{e.hour}
-							</span>
-						)
-					})
-				}
+			<div className="cite__col">
+				<h3 className="cite__subtitle">
+					<box-icon name="calendar"></box-icon>
+					Seleccionar fecha
+				</h3>
+				<Calendar
+	        onChange={setDate}
+	        value={date}
+	      />
 			</div>
+
+      <div className="cite__col">
+      	<h3 className="cite__subtitle">
+					<box-icon name="time"></box-icon>
+					Seleccionar hora
+				</h3>
+
+				<div className="cite__hours-list">
+					{
+						hours.map(e => {
+							return(
+								<span 
+									className={`cite__hours-item ${
+										(!e.available)
+										? "cite__hours-item-unavailable"
+										: ""
+									} ${
+										(time === e.hour)
+										? "cite__hours-item-select"
+										: ""
+									}`}
+									key={e.hour}
+									onClick={ () => handleSelectTime(e)}
+								>
+									{e.hour}
+								</span>
+							)
+						})
+					}
+				</div>
+      </div>
 		</div>
 	)
 }

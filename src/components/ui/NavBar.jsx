@@ -14,7 +14,7 @@ export const NavBar = () => {
 				onClick={handleClick}
 				to="/faq"
 				className={ 
-					({ isActive }) => `ui__nav-item ${
+					({ isActive }) => `ui__nav-item ui__nav-item-mobile ${
 						(isActive)
 						? "ui__nav-item-active"
 						: ""
@@ -29,7 +29,7 @@ export const NavBar = () => {
 				onClick={handleClick}
 				to="/"
 				className={ 
-					({ isActive }) => `ui__nav-item ${
+					({ isActive }) => `ui__nav-item ui__nav-item-mobile ${
 						(isActive)
 						? "ui__nav-item-active"
 						: ""
@@ -44,7 +44,7 @@ export const NavBar = () => {
 				onClick={handleClick}
 				to="/cita"
 				className={ 
-					({ isActive }) => `ui__nav-item ${
+					({ isActive }) => `ui__nav-item ui__nav-item-mobile ${
 						(isActive)
 						? "ui__nav-item-active"
 						: ""
@@ -53,6 +53,43 @@ export const NavBar = () => {
 			>
 				<box-icon name="list-ul"></box-icon>
 			</NavLink>
+
+			{/* Desktop */}
+
+			<a 
+				href="#"
+				className="ui__nav-item ui__nav-item-desktop"
+			>
+				Inicio
+			</a>
+
+			<a 
+				href="#"
+				className="ui__nav-item ui__nav-item-desktop"
+			>
+				Servicios
+			</a>
+
+			<a 
+				href="#"
+				className="ui__nav-item ui__nav-item-desktop"
+			>
+				Reseñas
+			</a>
+
+			<a 
+				href="#"
+				className="ui__nav-item ui__nav-item-desktop"
+			>
+				Agenda
+			</a>
+
+			<a 
+				href="#"
+				className="ui__nav-item ui__nav-item-desktop"
+			>
+				FAQ
+			</a>
 		</nav>
 	)
 }

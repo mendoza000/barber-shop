@@ -11,7 +11,29 @@ html, body{
 html{
 	font-size: 10px;
 	padding-bottom: 7rem;
+	overflow-x: hidden;
 }
 body{
 	font-size: 1.6rem;
+}
+
+
+
+@media screen and (min-width: 600px){
+	html{
+		padding-bottom: 0px;
+	}
+
+	body::-webkit-scrollbar {
+    width: 5px;     /* Tamaño del scroll en vertical */
+    height: 3px;    /* Tamaño del scroll en horizontal */
+	}
+	body::-webkit-scrollbar-thumb {
+	  background-color: $secondary;
+	  border-radius: 4px;
+	  transition: background-color 0.5s;
+	}
+	body::-webkit-scrollbar-thumb:active {
+	  background-color: $secondary-o;
+	}
 }

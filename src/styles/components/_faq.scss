@@ -13,15 +13,47 @@
 	display: flex;
 	flex-wrap: wrap;
 	grid-gap: 3rem
+
 }
 .faq__item{
 	background-color: $primary-l;
 	padding: 1.5rem;
 	border-radius: 15px;
 	box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.8);
+	max-width: 25rem;
+	margin-right: auto;
+	margin-left: auto;
 }
 .faq__item-title{
 	margin-bottom: 1rem;
 	color: $secondary;
 	font-size: 1.8rem;
+}
+
+@media screen and (min-width: 600px){
+	.faq__list-items{
+		padding: 0 3rem;
+	}
+}
+@media screen and(min-width: 870px){
+	.faq__list-items{
+		width: 70rem;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+@media screen and(min-width: 1000px){
+	.faq__list-items{
+		width: 75rem;
+	}
+}
+@media screen and(min-width: 1200px){
+	.faq__list-items{
+		width: 110rem;
+	}
+}
+@media screen and(min-width: 1400px){
+	.faq__list-items{
+		width: 130rem;
+	}
 }

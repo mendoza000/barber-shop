@@ -83,33 +83,37 @@ export const Header = () => {
 				></div>
 			</div>
 
-			<img 
-				src={barbero} 
-				alt="barbero"
-				className="barber__header-img"
-				ref={img}
-			/>
-			<div 
-				className="barber__header-img-sombra"
-				ref={sombra}
-			></div>
+			<div className="barber__header-col">
+				<img 
+					src={barbero} 
+					alt="barbero"
+					className="barber__header-img"
+					ref={img}
+				/>
+				<div 
+					className="barber__header-img-sombra"
+					ref={sombra}
+				></div>
+			</div>
 
-			<h1 
-				className="barber__header-title"
-				ref={title}
-			>
-				Zina Navarrete
-				<br/>
-				<span>Barber Shop</span>
-			</h1>
+			<div className="barber__header-col">
+				<h1 
+					className="barber__header-title"
+					ref={title}
+				>
+					Zina Navarrete
+					<br/>
+					<span>Barber Shop</span>
+				</h1>
 
-			<p 
-				className="barber__header-ubi"
-				ref={ubi}
-			>
-				<box-icon name='map'></box-icon>
-				México
-			</p>
+				<p 
+					className="barber__header-ubi"
+					ref={ubi}
+				>
+					<box-icon name='map'></box-icon>
+					México
+				</p>
+			</div>
 		</div>
 	)
 }
